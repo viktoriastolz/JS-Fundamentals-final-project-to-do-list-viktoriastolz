@@ -2,4 +2,4 @@
 <p>Студент: Viktoria Shtolts</p>
 <p>Відео: посилання на відео</p>
 <p>Репозиторій: https://github.com/viktoriastolz/JS-Fundamentals-final-project-to-do-list-viktoriastolz.git</p>
-<p>Посилання: посилання на хостинг (по наявності)</p>
+<p>Посилання: https://to-do-list-project-viktoriastolz.netlify.app/</p>
