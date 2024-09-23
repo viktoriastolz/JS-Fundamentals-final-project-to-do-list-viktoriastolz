@@ -1,4 +1,3 @@
-/* Основные стили */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,6 @@ body {
     border-radius: 10px;
 }
 
-/* Заголовок списка */
 h2 {
     text-align: center;
     margin-top: 20px;
@@ -31,7 +29,6 @@ h2 {
     color: #333;
 }
 
-/* Поля ввода и селекторы */
 #list-selector,
 #list-name,
 #task-input {
@@ -43,7 +40,6 @@ h2 {
     font-size: 16px;
 }
 
-/* Кнопки для создания и удаления списка */
 #new-list-btn,
 #delete-list-btn {
     background-color: #00D8A7;
@@ -68,7 +64,6 @@ h2 {
     background-color: #ff62627b;
 }
 
-/* Кнопка добавления задачи */
 #add-task-btn {
     background-color: #007bff;
     color: white;
@@ -77,8 +72,8 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px; /* Отступ сверху кнопки */
-    margin-bottom: 10px; /* Отступ снизу кнопки */
+    margin-top: 10px; 
+    margin-bottom: 10px; 
     width: 100%;
 }
 
@@ -86,7 +81,6 @@ h2 {
     background-color: #2a86e987;
 }
 
-/* Кнопка очистки выполненных задач */
 #clear-completed-btn {
     background-color: #afafaf;
     color: white;
@@ -103,7 +97,6 @@ h2 {
     background-color: #ffb800;
 }
 
-/* Контейнер для кнопок списка */
 .button-container {
     display: flex;
     justify-content: space-between;
@@ -114,13 +107,11 @@ h2 {
     width: 48%;
 }
 
-/* Список задач */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Задачи */
 li {
     display: flex;
     align-items: center;
@@ -132,50 +123,43 @@ li {
     border: 1px solid #ccc;
 }
 
-/* Текст задачи */
 li .task-text {
     flex: 1;
-    margin-right: 20px; /* Расстояние между текстом и иконками */
+    margin-right: 20px;
     margin-left: 10px;
 }
 
-/* Иконки для редактирования и удаления */
 li .icons {
     display: flex;
-    gap: 10px; /* Расстояние между иконками */
+    gap: 10px; 
 }
 
-/* Основные стили для иконок */
 li .icons svg {
     cursor: pointer;
     transition: stroke 0.3s ease;
 }
 
-/* Стили для иконок редактирования */
 .edit-icon {
-    stroke: #afafaf; /* Цвет по умолчанию для иконки редактирования */
+    stroke: #afafaf; 
 }
 
 .edit-icon:hover {
-    stroke: #00D8A7; /* Цвет при наведении на иконку редактирования */
+    stroke: #00D8A7; 
 }
 
-/* Стили для иконок удаления */
 .delete-icon {
-    stroke: #afafaf; /* Цвет по умолчанию для иконки удаления */
+    stroke: #afafaf; 
 }
 
 .delete-icon:hover {
-    stroke: #FF6262; /* Цвет при наведении на иконку удаления */
+    stroke: #FF6262; 
 }
 
-/* Стили для завершенных задач */
 .completed {
     text-decoration: line-through;
     color: #999;
 }
 
-/* Адаптивный дизайн */
 @media (max-width: 600px) {
     .container {
         width: 90%;
