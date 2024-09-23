@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let lists = JSON.parse(localStorage.getItem('todoLists')) || {};
 
-    // Initialize default list if empty
     if (Object.keys(lists).length === 0) {
         lists['My workday'] = [];
         localStorage.setItem('todoLists', JSON.stringify(lists));
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         tasks.forEach((task, index) => {
             const li = document.createElement('li');
 
-            // Checkbox
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.checked = task.completed;
@@ -52,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 saveLists();
             });
 
-            // Task Text
             const taskText = document.createElement('span');
             taskText.textContent = task.name;
             taskText.classList.add('task-text');
@@ -62,11 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 taskText.classList.remove('completed');
             }
 
-            // Icons Container
             const iconsContainer = document.createElement('div');
             iconsContainer.classList.add('icons');
 
-            // Edit Icon
             const editIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
             editIcon.setAttribute('width', '18');
             editIcon.setAttribute('height', '18');
@@ -84,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Delete Icon
             const deleteIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
             deleteIcon.setAttribute('width', '18');
             deleteIcon.setAttribute('height', '18');
@@ -99,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 saveLists();
             });
 
-            // Append elements
             iconsContainer.appendChild(editIcon);
             iconsContainer.appendChild(deleteIcon);
             li.appendChild(checkbox);
