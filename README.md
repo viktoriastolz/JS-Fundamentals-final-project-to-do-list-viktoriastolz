@@ -1,4 +1,4 @@
-Назва проєкту: <To-Do-List>
+<p>Назва проєкту: To-Do-List</p>
 Студент: <Viktoria> <Shtolts>
 Відео: <посилання на відео>
 Репозиторій: <https://github.com/viktoriastolz/JS-Fundamentals-final-project-to-do-list-viktoriastolz.git>
